@@ -1,0 +1,22 @@
+{
+    "list": {
+        "expense": [
+            "category1",
+            "category2",
+            "category3"
+        ],
+        "income": [
+            "category1",
+            "category2",
+            "category3"
+        ],
+        "other": [
+            "category1",
+            "category2",
+            "category3"
+        ]
+    },
+    "known_vendors": {
+        "Vendor description": "category"
+    }
+}

@@ -1,0 +1,12 @@
+# Ignore all CSV files
+*.csv
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore virtual environment directories
+venv/

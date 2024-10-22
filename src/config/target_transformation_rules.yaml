@@ -1,0 +1,32 @@
+# Apply transformations to the target schema
+transformations:
+    - column: 'Date (MM-DD-YYYY)'
+      operation: 'format_date'
+      params: 
+        required: true
+        format: '%m-%d-%Y'
+
+    - column: 'Store / Vendor'
+      operation: 'truncate'
+      params: 
+        required: true
+        max_length: 255
+
+    - column: '$ Amount'
+      operation: 'format_currency'
+      params:
+        required: true
+        min_value: 0.0
+        format: '0.00'
+
+    - column: 'Expense Category'
+      operation: 'truncate'
+      params:
+        required: true
+        max_length: 255
+
+    - column: 'Notes (optional)'
+      operation: 'truncate'
+      params:
+        required: false
+        max_length: 1024

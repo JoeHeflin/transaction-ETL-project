@@ -1,0 +1,9 @@
+{
+    "example_final_target": {
+        "standard_field": "target feild",
+        "vendor_long": "Store / Vendor",
+        "amount": "$ Amount",
+        "category": "Expense Category",
+        "notes": "Notes (Optional)"
+    }
+}

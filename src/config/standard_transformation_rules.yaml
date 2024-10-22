@@ -1,0 +1,63 @@
+# Apply transformations to the standardized schema
+transformations:
+  - column: 'id'
+    operation: 'hash_row'
+    params: 
+      required: true
+      type: 'integer'
+      hash_columns: []
+
+  - column: 'source'
+    operation: 'truncate'
+    params: 
+      required: true
+      max_length: 255
+
+  - column: 'type'
+    operation: 'validate_value'
+    params:
+      required: true
+      allowed_values: ['Debit', 'Credit']
+
+  - column: 'amount'
+    operation: 'format_currency'
+    params:
+      required: true
+      min_value: 0.0
+      format: '0.00'
+
+  - column: 'vendor_long'
+    operation: 'truncate'
+    params:
+      required: true
+      max_length: 255
+
+  - column: 'vendor_short'
+    operation: 'truncate'
+    params:
+      required: false
+      max_length: 255
+
+  - column: 'date'
+    operation: 'format_date'
+    params:
+      required: true
+      format: '%Y-%m-%d'
+
+  - column: 'category'
+    operation: 'assign_category'
+    params:
+      required: true
+      max_length: 255
+
+  - column: 'balance'
+    operation: 'format_currency'
+    params:
+      required: false
+      format: '0.00'
+
+  - column: 'notes'
+    operation: 'truncate'
+    params:
+      required: false
+      max_length: 1024

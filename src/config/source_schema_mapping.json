@@ -1,0 +1,19 @@
+{
+    "source_a_example": {
+        "full_name": "name",
+        "age": "age",
+        "dob": "date_of_birth",
+        "salary": {
+            "target_field": "salary_usd",
+            "transformation": "convert_to_usd"
+        },
+        "tags" : {
+            "target_field": "categories",
+            "value_map": {
+                "tag1": "category1",
+                "tag2": "category2",
+                "tag3": "category3"
+            }
+        }
+    }
+}
