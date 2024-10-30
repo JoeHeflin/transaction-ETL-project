@@ -1,0 +1,45 @@
+{
+    "list": {
+        "expense": [
+            "Car maintenance",
+            "Car insurance",
+            "Golf",
+            "Clothing",
+            "Debt",
+            "Electronics",
+            "Entertainment",
+            "Gas",
+            "Gifts",
+            "Going out",
+            "Groceries",
+            "Gym",
+            "Home maintenance",
+            "Insurance",
+            "Medical",
+            "Mortgage",
+            "Other",
+            "Public transportation",
+            "Rent",
+            "Restaurant",
+            "Telecom",
+            "Travel",
+            "Utilities",
+            "Work",
+            "Parking",
+            "Personal"
+        ],
+        "income": [
+            "category1",
+            "category2",
+            "category3"
+        ],
+        "other": [
+            "category1",
+            "category2",
+            "category3"
+        ]
+    },
+    "known_vendors": {
+        "Vendor description": "category"
+    }
+}

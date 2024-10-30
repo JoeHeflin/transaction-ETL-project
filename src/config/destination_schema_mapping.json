@@ -1,6 +1,6 @@
 {
-    "example_final_target": {
-        "standard_field": "target feild",
+    "destinationA_example": {
+        "date": "Date (MM-DD-YYYY)",
         "vendor_long": "Store / Vendor",
         "amount": "$ Amount",
         "category": "Expense Category",

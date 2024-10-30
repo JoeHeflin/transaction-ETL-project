@@ -1,19 +1,24 @@
 {
-    "source_a_example": {
-        "full_name": "name",
-        "age": "age",
-        "dob": "date_of_birth",
-        "salary": {
-            "target_field": "salary_usd",
-            "transformation": "convert_to_usd"
-        },
-        "tags" : {
-            "target_field": "categories",
-            "value_map": {
-                "tag1": "category1",
-                "tag2": "category2",
-                "tag3": "category3"
-            }
-        }
+    "sourceA_example": {
+        "Transaction Date": "date",
+        "Transaction Description": "vendor_long",
+        "Transaction Type": "type",
+        "Transaction Amount": "amount",
+        "Balance": "balance"
+    },
+    "sourceB_example": {
+        "Transaction Date": "date",
+        "Description": "vendor_long",
+        "Category": "category",
+        "Amount": "amount",
+        "Balance": "balance",
+        "Type": "type"
+    },
+    "sourceC_example": {
+        "Date (MM-DD-YYYY)": "date",
+        "Store / Vendor": "vendor_long",
+        "$ Amount": "amount",
+        "Expense Category": "category",
+        "Notes (Optional)": "notes"
     }
 }

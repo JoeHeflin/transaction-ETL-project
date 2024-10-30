@@ -8,7 +8,7 @@ transformations:
       hash_columns: []
 
   - column: 'source'
-    operation: 'truncate'
+    operation: 'add_source'
     params: 
       required: true
       max_length: 255

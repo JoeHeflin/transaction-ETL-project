@@ -6,16 +6,25 @@ project_structure = {
     "data": ["raw/", "processed/", "final/"],
     "logs": [],
     "src": {
-        "ingestion": ["ingest_from_source_a.py", "ingest_from_source_b.py", "common_ingestion.py"],
-        "transformation": ["transform_source_a.py", "transform_source_b.py", "common_transformation.py"],
+        "ingestion": [
+            "ingest_from_source_a.py",
+            "ingest_from_source_b.py",
+            "common_ingestion.py",
+        ],
+        "transformation": [
+            "transform_source_a.py",
+            "transform_source_b.py",
+            "common_transformation.py",
+        ],
         "manual_processing": ["manual_processor.py", "validation.py"],
         "utils": ["schema_validator.py", "logging_util.py", "file_util.py"],
-        "main.py": []
+        "main.py": [],
     },
     "tests": [],
     "requirements.txt": [],
-    "README.md": []
+    "README.md": [],
 }
+
 
 # Function to create project structure
 def create_structure(base_dir, structure):
@@ -41,8 +50,9 @@ def create_structure(base_dir, structure):
                 if file_name.endswith("/"):
                     os.makedirs(file_path, exist_ok=True)
                 if not os.path.exists(file_path):
-                    with open(file_path, 'w') as f:
+                    with open(file_path, "w") as f:
                         f.write("")  # Create an empty file
+
 
 # Function to execute project creation
 def create_project():
@@ -51,6 +61,7 @@ def create_project():
     os.makedirs(base_dir, exist_ok=True)
     create_structure(base_dir, project_structure)
     print(f"Project structure created at {os.path.abspath(base_dir)}")
+
 
 if __name__ == "__main__":
     create_project()
